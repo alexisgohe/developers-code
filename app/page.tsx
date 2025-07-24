@@ -2,6 +2,7 @@
 
 import type React from "react"
 
+import Link from "next/link"
 import { useState, useEffect } from "react"
 import { motion, useScroll, useTransform, useInView } from "framer-motion"
 import { useRef } from "react"
@@ -287,14 +288,16 @@ export default function DevelopersCodeLanding() {
             animate={isVisible ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <motion.button
-              whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(59, 130, 246, 0.3)" }}
-              whileTap={{ scale: 0.95 }}
-              className="group bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-500 hover:to-green-500 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 flex items-center gap-3 mx-auto"
-            >
-              Solicitar Cotización
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </motion.button>
+            <Link href="/prequalification" target="_blank" rel="noopener noreferrer">
+              <motion.button
+                whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(59, 130, 246, 0.3)" }}
+                whileTap={{ scale: 0.95 }}
+                className="group bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-500 hover:to-green-500 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 flex items-center gap-3 mx-auto"
+              >
+                Solicitar Cotización
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </motion.button>
+            </Link>
           </motion.div>
         </div>
 
