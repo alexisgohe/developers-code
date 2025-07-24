@@ -569,13 +569,13 @@ export default function DevelopersCodeLanding() {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <motion.a
-              href="mailto:contacto@developerscode.com"
+              href="mailto:hola.developerscode@gmail.com"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 flex items-center gap-3"
             >
               <Mail className="w-5 h-5" />
-              contacto@developerscode.com
+              hola.developerscode@gmail.com
             </motion.a>
 
             <motion.a
@@ -594,7 +594,7 @@ export default function DevelopersCodeLanding() {
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-slate-700/50">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="text-gray-400">© 2024 Developers Code. Todos los derechos reservados.</p>
+          <p className="text-gray-400">© 2025 Developers Code. Todos los derechos reservados.</p>
         </div>
       </footer>
     </div>
