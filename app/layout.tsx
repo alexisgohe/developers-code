@@ -5,8 +5,8 @@ export const metadata: Metadata = {
   title: 'Developers Code',
   description: 'Consultoría y desarrollo de software a la medida',
   icons: {
-    icon: '/developers_code.png',
-    shortcut: '/developers_code.png',
+    icon: '/logo.png',
+    shortcut: '/logo.png',
     apple: '/apple-touch-icon.png',
   },
   generator: 'Next.js',

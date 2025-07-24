@@ -76,23 +76,23 @@ export default function DevelopersCodeLanding() {
   const services = [
     {
       icon: <Globe className="w-8 h-8" />,
-      title: "Desarrollo Web",
-      description: "Aplicaciones web modernas, rápidas y escalables con las últimas tecnologías.",
+      title: "Sitios Web",
+      description: "Creamos sitios y aplicaciones web modernas, rápidas y escalables con las últimas tecnologías.",
     },
     {
       icon: <Database className="w-8 h-8" />,
       title: "Sistemas a la Medida",
-      description: "Soluciones personalizadas que se adaptan perfectamente a tu negocio.",
+      description: "Desarrollamos soluciones de software personalizadas que se adaptan perfectamente a tu negocio.",
     },
     {
       icon: <Settings className="w-8 h-8" />,
-      title: "Asesoría Técnica",
-      description: "Consultoría especializada para optimizar tu arquitectura tecnológica.",
+      title: "Asesoría Tecnológica",
+      description: "Ofrecemos consultoría especializada para optimizar tu arquitectura y estrategia tecnológica.",
     },
     {
-      icon: <Cpu className="w-8 h-8" />,
-      title: "Automatizaciones y APIs",
-      description: "Integración de sistemas y automatización de procesos empresariales.",
+      icon: <Server className="w-8 h-8" />,
+      title: "Mantenimiento y Soporte",
+      description: "Garantizamos la operatividad y el rendimiento de tus sistemas con planes de soporte continuo.",
     },
   ]
 
@@ -117,26 +117,26 @@ export default function DevelopersCodeLanding() {
   const workProcess = [
     {
       step: "01",
-      title: "Reunión Inicial",
-      description: "Analizamos tus necesidades y definimos objetivos claros.",
+      title: "Diagnóstico y Planificación",
+      description: "Identificamos requerimientos, definimos objetivos y creamos un plan de trabajo detallado para el proyecto.",
       icon: <MessageSquare className="w-6 h-6" />,
     },
     {
       step: "02",
-      title: "Planificación",
-      description: "Diseñamos la arquitectura y planificamos el desarrollo.",
+      title: "Diseño y Propuesta de Solución",
+      description: "Creamos la arquitectura de la solución y el diseño de la interfaz, presentando una propuesta técnica y visual.",
       icon: <FileText className="w-6 h-6" />,
     },
     {
       step: "03",
-      title: "Desarrollo",
-      description: "Implementamos la solución con actualizaciones constantes.",
+      title: "Desarrollo e Implementación",
+      description: "Construimos la solución con metodologías ágiles, entregando avances continuos y asegurando la calidad del código.",
       icon: <Code2 className="w-6 h-6" />,
     },
     {
       step: "04",
-      title: "Entrega Final",
-      description: "Desplegamos, probamos y entregamos tu proyecto completo.",
+      title: "Evaluación y Cierre",
+      description: "Realizamos pruebas exhaustivas, desplegamos el proyecto, validamos el cumplimiento de objetivos y entregamos la documentación final.",
       icon: <Rocket className="w-6 h-6" />,
     },
   ]
@@ -161,10 +161,10 @@ export default function DevelopersCodeLanding() {
       description: "Runtime de JavaScript del lado servidor",
     },
     {
-      name: "Python",
+      name: "Angular",
       icon: <Cpu className="w-8 h-8" />,
       color: "from-yellow-400 to-blue-500",
-      description: "Lenguaje versátil para backend y AI",
+      description: "Framework escalable para aplicaciones web",
     },
     {
       name: "TypeScript",
@@ -172,17 +172,17 @@ export default function DevelopersCodeLanding() {
       color: "from-blue-500 to-blue-700",
       description: "JavaScript con tipado estático",
     },
+    // {
+    //   name: "AWS",
+    //   icon: <Cloud className="w-8 h-8" />,
+    //   color: "from-orange-400 to-yellow-500",
+    //   description: "Servicios de nube de Amazon",
+    // },
     {
-      name: "AWS",
-      icon: <Cloud className="w-8 h-8" />,
-      color: "from-orange-400 to-yellow-500",
-      description: "Servicios de nube de Amazon",
-    },
-    {
-      name: "MongoDB",
+      name: "MYSQL",
       icon: <Database className="w-8 h-8" />,
       color: "from-green-500 to-green-700",
-      description: "Base de datos NoSQL",
+      description: "Base de datos SQL",
     },
     {
       name: "PostgreSQL",
@@ -190,20 +190,20 @@ export default function DevelopersCodeLanding() {
       color: "from-blue-600 to-indigo-600",
       description: "Base de datos relacional avanzada",
     },
+    // {
+    //   name: "Docker",
+    //   icon: <Layers className="w-8 h-8" />,
+    //   color: "from-blue-400 to-blue-600",
+    //   description: "Contenedorización de aplicaciones",
+    // },
+    // {
+    //   name: "GraphQL",
+    //   icon: <Zap className="w-8 h-8" />,
+    //   color: "from-pink-500 to-purple-600",
+    //   description: "Lenguaje de consulta para APIs",
+    // },
     {
-      name: "Docker",
-      icon: <Layers className="w-8 h-8" />,
-      color: "from-blue-400 to-blue-600",
-      description: "Contenedorización de aplicaciones",
-    },
-    {
-      name: "GraphQL",
-      icon: <Zap className="w-8 h-8" />,
-      color: "from-pink-500 to-purple-600",
-      description: "Lenguaje de consulta para APIs",
-    },
-    {
-      name: "React Native",
+      name: "Flutter",
       icon: <Smartphone className="w-8 h-8" />,
       color: "from-cyan-400 to-blue-500",
       description: "Desarrollo móvil multiplataforma",
@@ -218,45 +218,27 @@ export default function DevelopersCodeLanding() {
 
   const portfolio = [
     {
-      title: "E-commerce Avanzado",
+      title: "Sistema POS para MIPYMES",
       description:
-        "Plataforma completa de comercio electrónico con gestión de inventario, pagos y analytics en tiempo real.",
+        "Sistema de punto de venta diseñado para pequeñas y medianas empresas, con módulos básicos de inventario, ventas, movimientos de mercancías y corte de caja.",
       image: "/placeholder.svg?height=300&width=500",
-      technologies: ["Next.js", "Node.js", "PostgreSQL", "Stripe"],
-      results: ["300% aumento en ventas", "50% reducción en tiempo de carga", "99.9% uptime"],
-      link: "#",
-      category: "E-commerce",
-    },
-    {
-      title: "Sistema de Gestión Empresarial",
-      description:
-        "ERP personalizado para automatizar procesos de recursos humanos, contabilidad y gestión de proyectos.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["React", "Python", "MongoDB", "AWS"],
-      results: ["80% reducción en tareas manuales", "Integración con 15+ sistemas", "ROI del 250%"],
+      technologies: ["Angular", "Express", "PostgreSQL"],
+      results: [],
       link: "#",
       category: "Sistema Empresarial",
     },
     {
-      title: "App Móvil FinTech",
+      title: "Landing Page para Restaurante",
       description:
-        "Aplicación móvil para gestión financiera personal con IA para análisis de gastos y recomendaciones.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["React Native", "Node.js", "AI/ML", "Firebase"],
-      results: ["100K+ usuarios activos", "4.8★ rating en stores", "40% mejora en ahorro personal"],
-      link: "#",
-      category: "Aplicación Móvil",
+        "Página de presentación desarrollada como demostración, optimizada para accesibilidad y buen posicionamiento SEO. Ideal para negocios del sector restaurantero.",
+      image: "/restaurante.png?height=300&width=500",
+      technologies: ["React"],
+      results: [],
+      link: "https://alexisgohe.github.io/restaurante/",
+      category: "Sitio Web",
     },
-    {
-      title: "Plataforma de Automatización",
-      description: "Sistema de automatización de procesos empresariales con integración de múltiples APIs y workflows.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["TypeScript", "GraphQL", "Docker", "Microservicios"],
-      results: ["90% automatización de procesos", "60% reducción de errores", "24/7 operación autónoma"],
-      link: "#",
-      category: "Automatización",
-    },
-  ]
+  ];
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800 text-white overflow-hidden">
@@ -268,7 +250,7 @@ export default function DevelopersCodeLanding() {
         />
         <motion.div
           style={{ y: y2 }}
-          className="absolute top-40 right-10 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"
+          className="absolute top-40 right-10 w-96 h-96 bg-green-500/10 rounded-full blur-3xl"
         />
         <motion.div
           style={{ y: y1 }}
@@ -285,17 +267,17 @@ export default function DevelopersCodeLanding() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="mb-8"
           >
-            <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent mb-6">
-              Developers Code
-            </h1>
+            <div className="flex justify-center mb-8">
+              <img src="/logo_texto.png" alt="Logo de Developers Code" className="h-24 md:h-32" />
+            </div>
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={isVisible ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              <p className="text-2xl md:text-3xl text-gray-300 mb-4">Soluciones digitales serias.</p>
+              <p className="text-2xl md:text-3xl text-gray-300 mb-4">Transformamos tus ideas en Realidad Digital.</p>
               <p className="text-2xl md:text-3xl text-gray-300 mb-12">
-                <span className="text-blue-400 font-semibold">Resultados reales.</span>
+                <span className="text-blue-400 font-semibold">Resultados medibles, impacto real.</span>
               </p>
             </motion.div>
           </motion.div>
@@ -308,7 +290,7 @@ export default function DevelopersCodeLanding() {
             <motion.button
               whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(59, 130, 246, 0.3)" }}
               whileTap={{ scale: 0.95 }}
-              className="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 flex items-center gap-3 mx-auto"
+              className="group bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-500 hover:to-green-500 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 flex items-center gap-3 mx-auto"
             >
               Solicitar Cotización
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -370,7 +352,7 @@ export default function DevelopersCodeLanding() {
         <div className="max-w-6xl mx-auto">
           <motion.div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              ¿Por qué <span className="text-purple-400">elegirnos?</span>
+              ¿Por qué <span className="text-green-400">elegirnos?</span>
             </h2>
           </motion.div>
 
@@ -378,7 +360,7 @@ export default function DevelopersCodeLanding() {
             {whyChooseUs.map((item, index) => (
               <FloatingCard key={index} delay={index * 0.2}>
                 <div className="text-center group">
-                  <div className="bg-gradient-to-br from-purple-600 to-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <div className="bg-gradient-to-br from-green-600 to-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                     <div className="text-white">{item.icon}</div>
                   </div>
                   <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
@@ -443,8 +425,8 @@ export default function DevelopersCodeLanding() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {workProcess.map((process, index) => (
               <FloatingCard key={index} delay={index * 0.15}>
-                <div className="relative">
-                  <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-6 hover:border-cyan-500/50 transition-all duration-300">
+                <div className="relative h-full">
+                  <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-6 hover:border-cyan-500/50 transition-all duration-300 h-full flex flex-col">
                     <div className="text-6xl font-bold text-cyan-400/20 mb-4">{process.step}</div>
                     <div className="text-cyan-400 mb-4 group-hover:scale-110 transition-transform duration-300">
                       {process.icon}
@@ -467,7 +449,7 @@ export default function DevelopersCodeLanding() {
         <div className="max-w-6xl mx-auto">
           <motion.div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Nuestro <span className="text-purple-400">Portafolio</span>
+              Nuestro <span className="text-green-400">Portafolio</span>
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
               Casos de éxito que demuestran nuestra experiencia y capacidad de entrega
@@ -477,7 +459,7 @@ export default function DevelopersCodeLanding() {
           <div className="grid md:grid-cols-2 gap-8">
             {portfolio.map((project, index) => (
               <FloatingCard key={index} delay={index * 0.2}>
-                <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl overflow-hidden hover:border-purple-500/50 transition-all duration-300 group">
+                <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl overflow-hidden hover:border-green-500/50 transition-all duration-300 group">
                   {/* Project Image */}
                   <div className="relative overflow-hidden">
                     <img
@@ -487,7 +469,7 @@ export default function DevelopersCodeLanding() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
                     <div className="absolute top-4 left-4">
-                      <span className="bg-purple-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                      <span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">
                         {project.category}
                       </span>
                     </div>
@@ -495,7 +477,7 @@ export default function DevelopersCodeLanding() {
 
                   {/* Project Content */}
                   <div className="p-6">
-                    <h3 className="text-2xl font-bold mb-3 group-hover:text-purple-400 transition-colors">
+                    <h3 className="text-2xl font-bold mb-3 group-hover:text-green-400 transition-colors">
                       {project.title}
                     </h3>
                     <p className="text-gray-400 mb-4 leading-relaxed">{project.description}</p>
@@ -514,7 +496,9 @@ export default function DevelopersCodeLanding() {
 
                     {/* Results */}
                     <div className="mb-6">
+                      {project.results.length > 0 && (
                       <h4 className="text-sm font-semibold text-gray-300 mb-2">Resultados:</h4>
+                      )}
                       <ul className="space-y-1">
                         {project.results.map((result, resultIndex) => (
                           <li key={resultIndex} className="text-sm text-gray-400 flex items-center">
@@ -530,7 +514,7 @@ export default function DevelopersCodeLanding() {
                       href={project.link}
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
-                      className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 font-medium transition-colors group/link"
+                      className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 font-medium transition-colors group/link"
                     >
                       Ver proyecto completo
                       <ExternalLink className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
@@ -546,7 +530,7 @@ export default function DevelopersCodeLanding() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 flex items-center gap-3 mx-auto"
+              className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-500 hover:to-blue-500 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 flex items-center gap-3 mx-auto"
             >
               Ver todos los proyectos
               <ArrowRight className="w-5 h-5" />
@@ -556,7 +540,7 @@ export default function DevelopersCodeLanding() {
       </AnimatedSection>
 
       {/* CTA Section */}
-      <AnimatedSection className="py-20 px-4 bg-gradient-to-r from-blue-900/50 to-purple-900/50">
+      <AnimatedSection className="py-20 px-4 bg-gradient-to-r from-blue-900/50 to-green-900/50">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -572,20 +556,20 @@ export default function DevelopersCodeLanding() {
               href="mailto:hola.developerscode@gmail.com"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 flex items-center gap-3"
+              className="group bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-500 hover:to-green-500 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 flex items-center gap-3"
             >
               <Mail className="w-5 h-5" />
               hola.developerscode@gmail.com
             </motion.a>
 
             <motion.a
-              href="tel:+1234567890"
+              href="tel:+52 2283175642"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="group border-2 border-blue-400 hover:bg-blue-400 hover:text-slate-900 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 flex items-center gap-3"
             >
               <Phone className="w-5 h-5" />
-              +52 (555) 123-4567
+              +52 (228) 317-5642
             </motion.a>
           </div>
         </div>
