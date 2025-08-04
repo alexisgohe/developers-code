@@ -1,6 +1,8 @@
 'use client';
 
+import emailjs from '@emailjs/browser';
 import { useState, ChangeEvent, FormEvent } from 'react';
+import { toast } from 'sonner';
 import styles from './PrequalificationForm.module.css';
 
 interface FormData {
@@ -76,6 +78,7 @@ const PrequalificationForm = () => {
   const [formData, setFormData] = useState<FormData>(initialState);
   const [errors, setErrors] = useState<Partial<FormData>>({});
   const [currentSection, setCurrentSection] = useState<number>(1);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -122,12 +125,38 @@ const PrequalificationForm = () => {
     setCurrentSection(prev => Math.max(prev - 1, 1));
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    if (validateSection(currentSection)) {
-      console.log('Formulario enviado:', formData);
-      alert('¡Gracias por tu información! Nos pondremos en contacto pronto.');
-      // Aquí iría el envío a tu API
+    if (!validateSection(5)) { // Validar la última sección antes de enviar
+      toast.error('Por favor, completa todos los campos requeridos antes de enviar.');
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
+      const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
+      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
+
+      // EmailJS espera un objeto plano, por lo que convertimos los arrays a strings.
+      // Asegúrate de que estas claves coincidan con las variables en tu plantilla de EmailJS.
+      const templateParams = {
+        ...formData,
+        digitalPresence: formData.digitalPresence.join(', '),
+        goals: formData.goals.join(', '),
+      };
+
+      await emailjs.send(serviceID, templateID, templateParams, publicKey);
+
+      toast.success('¡Gracias por tu información! Nos pondremos en contacto pronto.');
+      setFormData(initialState); // Opcional: resetear el formulario
+      setCurrentSection(1); // Volver al inicio del formulario
+    } catch (error) {
+      // console.error('Error al enviar el correo:', error);
+      toast.error('Hubo un error al enviar tu solicitud. Por favor, inténtalo de nuevo.');
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -326,14 +355,16 @@ const PrequalificationForm = () => {
               Anterior
             </button>
           )}
-          
-          {currentSection < 5 ? (
+
+          {currentSection < 5 && (
             <button type="button" onClick={handleNext} className={styles.primaryButton}>
               Siguiente
             </button>
-          ) : (
-            <button type="submit" className={styles.submitButton}>
-              Enviar Solicitud
+          )}
+
+          {currentSection == 5 && (
+            <button type="submit" className={styles.submitButton} disabled={isSubmitting}>
+              {isSubmitting ? 'Enviando...' : 'Enviar Solicitud'}
             </button>
           )}
         </div>
