@@ -1,0 +1,22 @@
+{
+  "name": "Developers Code - Consultoría Tecnológica México",
+  "short_name": "Developers Code",
+  "description": "Consultoría tecnológica y desarrollo de software a medida en México",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png", 
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0f172a",
+  "background_color": "#0f172a",
+  "display": "standalone",
+  "start_url": "/",
+  "lang": "es-MX"
+}
