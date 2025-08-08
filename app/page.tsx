@@ -132,7 +132,7 @@ export default function DevelopersCodeLanding() {
       icon: <MessageSquare className="w-6 h-6" />,
     },
     {
-      step: "02", 
+      step: "02",
       title: "Propuesta Técnica y Diseño",
       description: "Creamos la propuesta de solución, wireframes y diseños de interfaz adaptados a tu marca y usuarios.",
       icon: <FileText className="w-6 h-6" />,
@@ -173,7 +173,7 @@ export default function DevelopersCodeLanding() {
     {
       name: "Angular",
       icon: <Cpu className="w-8 h-8" />,
-      color: "from-yellow-400 to-blue-500", 
+      color: "from-yellow-400 to-blue-500",
       description: "Aplicaciones empresariales robustas",
     },
     {
@@ -213,9 +213,8 @@ export default function DevelopersCodeLanding() {
       title: "Sistema POS para MIPYMES",
       description: "Sistema de punto de venta completo para pequeñas y medianas empresas mexicanas, con módulos de inventario, ventas, reportes financieros y corte de caja automatizado.",
       image: "/sistema-pos-preview.jpg",
-      technologies: ["Angular", "Express.js", "PostgreSQL"],
+      technologies: ["Next.js", "Spring Boot", "PostgreSQL"],
       results: [
-        "Reducción del 60% en tiempo de procesamiento de ventas",
         "Control de inventario automatizado",
         "Reportes financieros en tiempo real"
       ],
@@ -228,9 +227,8 @@ export default function DevelopersCodeLanding() {
       image: "/restaurante-preview.jpg",
       technologies: ["React", "Next.js", "Tailwind CSS"],
       results: [
-        "100% optimizado para dispositivos móviles", 
+        "100% optimizado para dispositivos móviles",
         "Velocidad de carga: 95/100 Google PageSpeed",
-        "Aumento del 40% en reservas online"
       ],
       link: "https://alexisgohe.github.io/restaurante/",
       category: "Sitio Web Corporativo",
@@ -265,9 +263,9 @@ export default function DevelopersCodeLanding() {
             className="mb-8"
           >
             <div className="flex justify-center mb-8">
-              <Image 
+              <Image
                 src="/logo.webp"
-                alt="Developers Code - Consultoría Tecnológica y Desarrollo de Software en México" 
+                alt="Developers Code - Consultoría Tecnológica y Desarrollo de Software en México"
                 width={300}
                 height={128}
                 className="h-24 md:h-32 w-auto"
@@ -296,7 +294,7 @@ export default function DevelopersCodeLanding() {
             animate={isVisible ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <Link href="#contacto">
+            <Link href="/contacto">
               <motion.button
                 whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(59, 130, 246, 0.3)" }}
                 whileTap={{ scale: 0.95 }}
@@ -356,6 +354,23 @@ export default function DevelopersCodeLanding() {
               </FloatingCard>
             ))}
           </div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={isVisible ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="mt-12"
+          >
+            <Link href="/servicios">
+              <motion.button
+                whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(59, 130, 246, 0.3)" }}
+                whileTap={{ scale: 0.95 }}
+                className="group bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-500 hover:to-green-500 px-6 py-3 rounded-full text-md font-medium transition-all duration-300 flex items-center gap-3 mx-auto"
+              >
+                Conoce más detalles
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </motion.button>
+            </Link>
+          </motion.div>
         </div>
       </AnimatedSection>
 
@@ -622,7 +637,7 @@ export default function DevelopersCodeLanding() {
           </div>
           <div className="border-t border-slate-700/50 pt-6 text-center">
             <p className="text-gray-400 text-sm">
-              © 2025 Developers Code. Todos los derechos reservados. | 
+              © 2025 Developers Code. Todos los derechos reservados. |
               <span className="text-blue-400 ml-1">Consultoría Tecnológica México</span>
             </p>
           </div>
