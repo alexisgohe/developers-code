@@ -1,24 +1,9 @@
-# Robots.txt para Developers Code
+# *
 User-agent: *
 Allow: /
 
-# Bloquear directorios administrativos
-Disallow: /admin/
-Disallow: /_next/
-Disallow: /api/
+# Host
+Host: https://developers-code.vercel.app
 
-# Permitir crawling de CSS y JS
-Allow: /_next/static/
-
-# Sitemap
+# Sitemaps
 Sitemap: https://developers-code.vercel.app/sitemap.xml
-
-# Crawl-delay para bots pesados
-User-agent: SemrushBot
-Crawl-delay: 10
-
-User-agent: AhrefsBot  
-Crawl-delay: 10
-
-User-agent: MJ12bot
-Crawl-delay: 10
