@@ -2,6 +2,7 @@
 
 import emailjs from '@emailjs/browser';
 import { useState, ChangeEvent, FormEvent } from 'react';
+import { toast } from 'sonner';
 
 interface FormData {
   // Sección 1: Datos de contacto
@@ -139,21 +140,34 @@ const PrequalificationForm = () => {
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    if (!validateSection(5)) {
-      alert('Por favor, completa todos los campos requeridos antes de enviar.');
+    if (!validateSection(5)) { // Validar la última sección antes de enviar
+      toast.error('Por favor, completa todos los campos requeridos antes de enviar.');
       return;
     }
 
     setIsSubmitting(true);
 
     try {
-      // Simulación del envío del formulario
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      alert('¡Gracias por tu información! Nos pondremos en contacto pronto.');
-      setFormData(initialState);
-      setCurrentSection(1);
+      const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
+      const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
+      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
+
+      // EmailJS espera un objeto plano, por lo que convertimos los arrays a strings.
+      // Asegúrate de que estas claves coincidan con las variables en tu plantilla de EmailJS.
+      const templateParams = {
+        ...formData,
+        digitalPresence: formData.digitalPresence.join(', '),
+        goals: formData.goals.join(', '),
+      };
+
+      await emailjs.send(serviceID, templateID, templateParams, publicKey);
+
+      toast.success('¡Gracias por tu información! Nos pondremos en contacto pronto.');
+      setFormData(initialState); // Opcional: resetear el formulario
+      setCurrentSection(1); // Volver al inicio del formulario
     } catch (error) {
-      alert('Hubo un error al enviar tu solicitud. Por favor, inténtalo de nuevo.');
+      // console.error('Error al enviar el correo:', error);
+      toast.error('Hubo un error al enviar tu solicitud. Por favor, inténtalo de nuevo.');
     } finally {
       setIsSubmitting(false);
     }
