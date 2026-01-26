@@ -212,7 +212,7 @@ export default function DevelopersCodeLanding() {
     {
       title: "Sistema POS para MIPYMES",
       description: "Sistema de punto de venta completo para pequeñas y medianas empresas mexicanas, con módulos de inventario, ventas, reportes financieros y corte de caja automatizado.",
-      image: "/sistema-pos-preview.jpg",
+      image: "/sistema-pos-preview.png",
       technologies: ["Next.js", "Spring Boot", "PostgreSQL"],
       results: [
         "Control de inventario automatizado",
@@ -223,7 +223,7 @@ export default function DevelopersCodeLanding() {
     },
     {
       title: "Landing Page Restaurante Gourmet",
-      description: "Sitio web profesional para restaurante con diseño responsive, optimización SEO y integración con sistemas de reservas online.",
+      description: "Sitio web profesional para restaurante con diseño responsive, optimización SEO, integración con sistemas de reservas online y gestión de menú digital.",
       image: "/restaurante-preview.jpg",
       technologies: ["React", "Next.js", "Tailwind CSS"],
       results: [
@@ -403,7 +403,7 @@ export default function DevelopersCodeLanding() {
       </AnimatedSection>
 
       {/* Tech Stack Section */}
-      <AnimatedSection className="py-20 px-4">
+      {/* <AnimatedSection className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <motion.div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -428,7 +428,7 @@ export default function DevelopersCodeLanding() {
                   </div>
                   <h3 className="text-lg font-semibold text-center mb-2">{tech.name}</h3>
 
-                  {/* Tooltip */}
+                  Tooltip
                   <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-2 bg-slate-900 text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap z-10">
                     {tech.description}
                     <div className="absolute top-full left-1/2 transform -translate-x-1/2 border-4 border-transparent border-t-slate-900"></div>
@@ -438,7 +438,7 @@ export default function DevelopersCodeLanding() {
             ))}
           </div>
         </div>
-      </AnimatedSection>
+      </AnimatedSection> */}
 
       {/* Work Process Section */}
       <AnimatedSection className="py-20 px-4">
@@ -479,10 +479,11 @@ export default function DevelopersCodeLanding() {
         <div className="max-w-6xl mx-auto">
           <motion.div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Casos de <span className="text-green-400">Éxito Empresarial</span>
+              Proyectos <span className="text-green-400">demostrativos</span>
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Proyectos reales que demuestran nuestra capacidad para transformar empresas mexicanas
+              Ejemplos funcionales de páginas web y sistemas desarrollados para mostrar
+              nuestro enfoque, diseño y calidad de desarrollo.
             </p>
           </motion.div>
 
@@ -601,7 +602,7 @@ export default function DevelopersCodeLanding() {
 
           {/* Local SEO Info */}
           <div className="mt-8 text-gray-400">
-            <p>📍 Coatepect, Veracruz, México | Servicios en toda la República Mexicana</p>
+            <p>📍 Coatepec, Veracruz, México | Servicios en toda la República Mexicana</p>
             <p className="mt-2">Consultoría tecnológica y desarrollo de software para empresas mexicanas</p>
           </div>
         </div>
@@ -618,12 +619,13 @@ export default function DevelopersCodeLanding() {
               </p>
             </div>
             <div>
-              <h4 className="text-lg font-semibold mb-3 text-white">Servicios</h4>
+              <h4 className="text-lg font-semibold mb-3 text-white">Otros servicios</h4>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li>Desarrollo web profesional</li>
-                <li>Software empresarial a medida</li>
-                <li>Consultoría tecnológica</li>
-                <li>Mantenimiento de sistemas</li>
+                <li>
+                  <a href="/invitaciones" className="hover:text-white transition">
+                    Invitaciones digitales para todo tipo de eventos
+                  </a>
+                </li>
               </ul>
             </div>
             <div>
@@ -637,7 +639,7 @@ export default function DevelopersCodeLanding() {
           </div>
           <div className="border-t border-slate-700/50 pt-6 text-center">
             <p className="text-gray-400 text-sm">
-              © 2025 Developers Code. Todos los derechos reservados. |
+              © 2026 Developers Code. Todos los derechos reservados. |
               <span className="text-blue-400 ml-1">Consultoría Tecnológica México</span>
             </p>
           </div>

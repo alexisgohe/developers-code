@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import Link from "next/link"
-import { Globe, Database, Settings, ArrowRight } from "lucide-react"
+import { Globe, Database, Settings, ArrowRight, ArrowLeft } from "lucide-react"
 
 // Componente animado para secciones
 const AnimatedSection = ({
@@ -98,7 +98,11 @@ export default function ServiciosPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800 text-white overflow-hidden">
-      <AnimatedSection className="py-20 px-4">
+      <AnimatedSection className="px-4">
+      <Link href="/" className="inline-flex items-center text-gray-400 hover:text-white mt-6 mb-20 transition-colors">
+        <ArrowLeft className="w-5 h-5 mr-2" />
+        Volver al inicio
+      </Link>
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
             Nuestros <span className="text-blue-400">Servicios de Desarrollo</span>

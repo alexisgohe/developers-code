@@ -3,6 +3,8 @@
 import emailjs from '@emailjs/browser';
 import { useState, ChangeEvent, FormEvent } from 'react';
 import { toast } from 'sonner';
+import Link from 'next/link';
+import { ArrowLeft } from 'lucide-react';
 
 interface FormData {
   // Sección 1: Datos de contacto
@@ -444,7 +446,12 @@ const PrequalificationForm = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800 text-white flex items-center justify-center py-16 px-4">
-      <div className="max-w-2xl w-full mx-auto bg-slate-800/60 backdrop-blur-md rounded-2xl shadow-lg border border-slate-700/50 p-8">
+      <div className="max-w-2xl w-full">
+        <Link href="/" className="inline-flex items-center text-gray-400 hover:text-white mb-6 transition-colors">
+          <ArrowLeft className="w-5 h-5 mr-2" />
+          Volver al inicio
+        </Link>
+        <div className="bg-slate-800/60 backdrop-blur-md rounded-2xl shadow-lg border border-slate-700/50 p-8">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-400 text-center">
           Formulario de Evaluación de Necesidades Digitales
         </h2>
@@ -507,6 +514,7 @@ const PrequalificationForm = () => {
               </button>
             )}
           </div>
+        </div>
         </div>
       </div>
     </div>
