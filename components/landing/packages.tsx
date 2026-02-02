@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils"
 
 const packages = [
   {
-    name: "Clásico",
+    name: "Básico",
     price: "$249",
     originalPrice: "$399",
     description: "Perfecto para quienes buscan elegancia y simplicidad.",
@@ -21,7 +21,7 @@ const packages = [
       "Fecha y hora del evento",
       "Mensaje final de agradecimiento",
     ],
-    buttonText: "Elegir Clásico",
+    buttonText: "Elegir Básico",
   },
   {
     name: "Premium",
@@ -31,7 +31,7 @@ const packages = [
     icon: Crown,
     popular: true,
     features: [
-      "Todo lo del Clásico +",
+      "Todo lo del Básico +",
       "3 fotografías",
       "Dirección de misa y salón (Google Maps)",
       "Cuenta regresiva animada",
@@ -44,7 +44,7 @@ const packages = [
     buttonText: "Elegir Premium",
   },
   {
-    name: "Premier",
+    name: "Elite",
     price: "$799",
     originalPrice: "$1,099",
     description: "La experiencia más completa y exclusiva.",
@@ -65,7 +65,7 @@ const packages = [
       "Sobre animado de apertura",
       "Animaciones premium",
     ],
-    buttonText: "Quiero el Premier",
+    buttonText: "Quiero el Elite",
   },
 ]
 
