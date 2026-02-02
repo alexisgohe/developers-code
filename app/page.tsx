@@ -588,14 +588,14 @@ export default function DevelopersCodeLanding() {
               </motion.a>
 
               <motion.a
-                href="tel:+522283175642"
+                href="tel:+525651392730"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="group border-2 border-blue-400 hover:bg-blue-400 hover:text-slate-900 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 flex items-center gap-3"
                 aria-label="Llamar a Developers Code"
               >
                 <Phone className="w-5 h-5" />
-                +52 (228) 317-5642
+                +52 (565) 139-2730
               </motion.a>
             </div>
           </address>
@@ -622,7 +622,7 @@ export default function DevelopersCodeLanding() {
               <h4 className="text-lg font-semibold mb-3 text-white">Otros servicios</h4>
               <ul className="space-y-2 text-sm text-gray-400">
                 <li>
-                  <a href="/invitaciones" className="hover:text-white transition">
+                  <a href="/invitaciones" target="_blank" className="hover:text-white transition">
                     Invitaciones digitales para todo tipo de eventos
                   </a>
                 </li>
@@ -632,7 +632,7 @@ export default function DevelopersCodeLanding() {
               <h4 className="text-lg font-semibold mb-3 text-white">Contacto</h4>
               <ul className="space-y-2 text-sm text-gray-400">
                 <li>📧 hola.developerscode@gmail.com</li>
-                <li>📞 +52 (228) 317-5642</li>
+                <li>📞 +52 (565) 139-2730</li>
                 <li>📍 Coatepec, Veracruz, México</li>
               </ul>
             </div>

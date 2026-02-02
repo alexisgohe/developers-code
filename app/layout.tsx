@@ -100,7 +100,7 @@ export default function RootLayout({
               "logo": "https://developers-code.vercel.app/logo.png",
               "contactPoint": {
                 "@type": "ContactPoint",
-                "telephone": "+52-228-317-5642",
+                "telephone": "+52-565-139-2730",
                 "contactType": "customer service",
                 "areaServed": "MX",
                 "availableLanguage": "Spanish"

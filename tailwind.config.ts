@@ -9,13 +9,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        border: "hsl(240, 5%, 84%)",
-        input: "hsl(240, 5%, 84%)",
-        ring: "hsl(240, 5%, 64%)",
-        background: "hsl(0, 0%, 100%)",
-        foreground: "hsl(240, 10%, 4%)",
-      },
       animation: {
         "gradient-x": "gradient-x 15s ease infinite",
         "gradient-y": "gradient-y 15s ease infinite",
