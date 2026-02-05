@@ -30,6 +30,22 @@ const demos = [
     colors: ["bg-rose-100", "bg-rose-200", "bg-rose-50"],
     image: "/demos/xv-vino.png",
     videoUrl: "https://drive.google.com/file/d/1sN6AL1khxgCu0mu4-d8f9Sk_anX77Tw3/preview",
+  },
+  {
+    title: "Boda Palo de Rosa, Azul Marino",
+    type: "Boda",
+    description: "Un diseño elegante y moderno combinando tonos de palo de rosa y azul marino.",
+    colors: ["bg-rose-100", "bg-rose-200", "bg-blue-50"],
+    image: "/demos/boda-azul-rosa.jpg",
+    videoUrl: "https://drive.google.com/file/d/1leQm0_0M3efzclXQqaW90OxQUqwob4VB/preview",
+  },
+  {
+    title: "Cumpleaños Real Madrid",
+    type: "Cumpleaños",
+    description: "Diseño original inspirado en el Real Madrid con colores azul y dorado.",
+    colors: ["bg-red-100", "bg-red-200", "bg-white"],
+    image: "/demos/cumple-madrid.jpg",
+    videoUrl: "https://drive.google.com/file/d/1FTVpHB0N2OzrgDAtmB1Kr20v-QPSop1I/preview",
   }
 ]
 
