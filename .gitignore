@@ -25,3 +25,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# media files
+*.mov
+*.mp4
+*.webm
+public/demos/*.mov
+public/demos/*.mp4
