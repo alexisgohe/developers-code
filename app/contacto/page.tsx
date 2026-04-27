@@ -180,8 +180,8 @@ const PrequalificationForm = () => {
       case 1:
         return (
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-blue-400 mb-6 flex items-center gap-2">
-              <span className="w-4 h-4 bg-blue-500 rounded"></span>
+            <h3 className="text-2xl font-bold text-[#19a4b7] mb-6 flex items-center gap-2">
+              <span className="w-4 h-4 bg-[#19a4b7] rounded"></span>
               Datos de contacto
             </h3>
             
@@ -192,7 +192,7 @@ const PrequalificationForm = () => {
                 name="fullName" 
                 value={formData.fullName} 
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#19a4b7] focus:border-transparent transition-all"
                 placeholder="Tu nombre completo"
               />
               {errors.fullName && <span className="text-red-400 text-sm">{errors.fullName}</span>}
@@ -205,7 +205,7 @@ const PrequalificationForm = () => {
                 name="phone" 
                 value={formData.phone} 
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#19a4b7] focus:border-transparent transition-all"
                 placeholder="+52 123 456 7890"
               />
               {errors.phone && <span className="text-red-400 text-sm">{errors.phone}</span>}
@@ -218,7 +218,7 @@ const PrequalificationForm = () => {
                 name="email" 
                 value={formData.email} 
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#19a4b7] focus:border-transparent transition-all"
                 placeholder="tu@email.com"
               />
               {errors.email && <span className="text-red-400 text-sm">{errors.email}</span>}
@@ -231,7 +231,7 @@ const PrequalificationForm = () => {
                 name="businessName" 
                 value={formData.businessName} 
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#19a4b7] focus:border-transparent transition-all"
                 placeholder="Nombre de tu empresa o negocio"
               />
             </div>
@@ -243,7 +243,7 @@ const PrequalificationForm = () => {
                 name="location" 
                 value={formData.location} 
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#19a4b7] focus:border-transparent transition-all"
                 placeholder="Ciudad, Estado"
               />
               {errors.location && <span className="text-red-400 text-sm">{errors.location}</span>}
@@ -254,8 +254,8 @@ const PrequalificationForm = () => {
       case 2:
         return (
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-green-400 mb-6 flex items-center gap-2">
-              <span className="w-4 h-4 bg-green-500 rounded"></span>
+            <h3 className="text-2xl font-bold text-[#19a4b7] mb-6 flex items-center gap-2">
+              <span className="w-4 h-4 bg-[#19a4b7] rounded"></span>
               Situación actual del negocio
             </h3>
 
@@ -266,7 +266,7 @@ const PrequalificationForm = () => {
                 value={formData.businessType} 
                 onChange={handleChange} 
                 rows={3}
-                className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
+                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#19a4b7] focus:border-transparent transition-all resize-none"
                 placeholder="Describe a qué se dedica tu negocio..."
               />
               {errors.businessType && <span className="text-red-400 text-sm">{errors.businessType}</span>}
@@ -278,7 +278,7 @@ const PrequalificationForm = () => {
                 name="employees" 
                 value={formData.employees} 
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-[#19a4b7] focus:border-transparent transition-all appearance-none"
               >
                 <option value="Solo yo">Solo yo</option>
                 <option value="2 a 5 personas">2 a 5 personas</option>
@@ -298,7 +298,7 @@ const PrequalificationForm = () => {
                       value={option}
                       checked={formData.digitalPresence.includes(option)}
                       onChange={handleCheckboxChange}
-                      className="w-4 h-4 rounded border-slate-600 bg-slate-700/50 text-blue-500 focus:ring-blue-500 focus:ring-offset-slate-800"
+                      className="w-4 h-4 rounded border-white/20 bg-white/5 text-[#19a4b7] focus:ring-[#19a4b7] focus:ring-offset-slate-900"
                     />
                     <span>{option}</span>
                   </label>
@@ -311,8 +311,8 @@ const PrequalificationForm = () => {
       case 3:
         return (
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-yellow-400 mb-6 flex items-center gap-2">
-              <span className="w-4 h-4 bg-yellow-500 rounded"></span>
+            <h3 className="text-2xl font-bold text-[#f36523] mb-6 flex items-center gap-2">
+              <span className="w-4 h-4 bg-[#f36523] rounded"></span>
               Necesidad y urgencia
             </h3>
 
@@ -322,7 +322,7 @@ const PrequalificationForm = () => {
                 name="solutionType" 
                 value={formData.solutionType} 
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-[#19a4b7] focus:border-transparent transition-all"
               >
                 <option value="">Selecciona una opción</option>
                 {solutionTypeOptions.map(option => (
@@ -338,7 +338,7 @@ const PrequalificationForm = () => {
                 value={formData.mainProblem} 
                 onChange={handleChange} 
                 rows={3}
-                className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
+                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#19a4b7] focus:border-transparent transition-all resize-none"
                 placeholder="Describe tu principal desafío digital..."
               />
             </div>
@@ -349,7 +349,7 @@ const PrequalificationForm = () => {
                 name="urgency" 
                 value={formData.urgency} 
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-[#19a4b7] focus:border-transparent transition-all"
               >
                 <option value="Alta urgencia (menos de 30 días)">Alta urgencia (menos de 30 días)</option>
                 <option value="Mediana urgencia (1 a 3 meses)">Mediana urgencia (1 a 3 meses)</option>
@@ -362,8 +362,8 @@ const PrequalificationForm = () => {
       case 4:
         return (
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-red-400 mb-6 flex items-center gap-2">
-              <span className="w-4 h-4 bg-red-500 rounded"></span>
+            <h3 className="text-2xl font-bold text-[#f36523] mb-6 flex items-center gap-2">
+              <span className="w-4 h-4 bg-[#f36523] rounded"></span>
               Inversión y experiencia previa
             </h3>
 
@@ -373,7 +373,7 @@ const PrequalificationForm = () => {
                 name="previousExperience" 
                 value={formData.previousExperience} 
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-[#19a4b7] focus:border-transparent transition-all"
               >
                 <option value="Sí, con buen resultado">Sí, con buen resultado</option>
                 <option value="Sí, pero fue una mala experiencia">Sí, pero fue una mala experiencia</option>
@@ -387,7 +387,7 @@ const PrequalificationForm = () => {
                 name="budget" 
                 value={formData.budget} 
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-[#19a4b7] focus:border-transparent transition-all"
               >
                 <option value="Menos de $5,000 MXN">Menos de $5,000 MXN</option>
                 <option value="Entre $5,000 y $10,000 MXN">Entre $5,000 y $10,000 MXN</option>
@@ -401,8 +401,8 @@ const PrequalificationForm = () => {
       case 5:
         return (
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-purple-400 mb-6 flex items-center gap-2">
-              <span className="w-4 h-4 bg-purple-500 rounded"></span>
+            <h3 className="text-2xl font-bold text-[#19a4b7] mb-6 flex items-center gap-2">
+              <span className="w-4 h-4 bg-[#19a4b7] rounded"></span>
               Objetivos y percepción de valor
             </h3>
 
@@ -417,7 +417,7 @@ const PrequalificationForm = () => {
                       value={option}
                       checked={formData.goals.includes(option)}
                       onChange={handleCheckboxChange}
-                      className="w-4 h-4 rounded border-slate-600 bg-slate-700/50 text-blue-500 focus:ring-blue-500 focus:ring-offset-slate-800"
+                      className="w-4 h-4 rounded border-white/20 bg-white/5 text-[#19a4b7] focus:ring-[#19a4b7] focus:ring-offset-slate-900"
                     />
                     <span>{option}</span>
                   </label>
@@ -432,7 +432,7 @@ const PrequalificationForm = () => {
                 value={formData.valuePerception} 
                 onChange={handleChange} 
                 rows={3}
-                className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
+                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#19a4b7] focus:border-transparent transition-all resize-none"
                 placeholder="Describe qué resultados considerarías exitosos..."
               />
             </div>
@@ -445,17 +445,17 @@ const PrequalificationForm = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800 text-white flex items-center justify-center py-16 px-4">
+    <div className="min-h-screen bg-[#030712] text-white flex items-center justify-center py-16 px-4">
       <div className="max-w-2xl w-full">
         <Link href="/" className="inline-flex items-center text-gray-400 hover:text-white mb-6 transition-colors">
           <ArrowLeft className="w-5 h-5 mr-2" />
           Volver al inicio
         </Link>
-        <div className="bg-slate-800/60 backdrop-blur-md rounded-2xl shadow-lg border border-slate-700/50 p-8">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-400 text-center">
+        <div className="bg-[#00023f]/40 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/10 p-8">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#19a4b7] text-center">
           Formulario de Evaluación de Necesidades Digitales
         </h2>
-        <p className="text-base text-gray-300 font-medium mb-8 text-center">
+        <p className="text-base text-slate-400 font-medium mb-8 text-center">
           Información 100% confidencial · Tiempo estimado: Solo 3 minutos
         </p>
         
@@ -465,7 +465,7 @@ const PrequalificationForm = () => {
             <div
               key={section}
               className={`w-8 h-8 flex items-center justify-center rounded-full font-bold transition-all duration-300 cursor-pointer
-              ${currentSection >= section ? 'bg-blue-400 text-white scale-105 shadow-lg' : 'bg-slate-700 text-gray-400 hover:bg-slate-600'}
+              ${currentSection >= section ? 'bg-[#19a4b7] text-[#00023f] scale-105 shadow-lg shadow-[#19a4b7]/20' : 'bg-white/10 text-slate-500 hover:bg-white/20'}
             `}
               onClick={() => currentSection > section && setCurrentSection(section)}
             >
@@ -478,12 +478,12 @@ const PrequalificationForm = () => {
           {renderSection()}
           
           {/* Navigation buttons */}
-          <div className="flex justify-between mt-8 pt-6 border-t border-slate-700">
+          <div className="flex justify-between mt-8 pt-6 border-t border-white/10">
             {currentSection > 1 && (
               <button
                 type="button"
                 onClick={handlePrev}
-                className="px-6 py-3 rounded-xl bg-slate-700 text-gray-200 font-semibold hover:bg-slate-600 transition-all duration-200 border border-slate-600"
+                className="px-6 py-3 rounded-xl bg-white/5 text-gray-300 font-semibold hover:bg-white/10 transition-all duration-200 border border-white/10"
               >
                 ← Anterior
               </button>
@@ -492,7 +492,7 @@ const PrequalificationForm = () => {
               <button
                 type="button"
                 onClick={handleNext}
-                className="px-6 py-3 rounded-xl bg-blue-500 text-white font-semibold hover:bg-blue-400 transition-all duration-200 ml-auto shadow-lg hover:shadow-blue-500/25"
+                className="px-6 py-3 rounded-xl bg-[#19a4b7] text-[#00023f] font-bold hover:bg-[#19a4b7]/90 transition-all duration-200 ml-auto shadow-lg hover:shadow-[#19a4b7]/25"
               >
                 Siguiente →
               </button>
@@ -500,7 +500,7 @@ const PrequalificationForm = () => {
             {currentSection === 5 && (
               <button
                 onClick={handleSubmit}
-                className="px-8 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-green-600 text-white font-bold hover:from-blue-500 hover:to-green-500 transition-all duration-200 ml-auto shadow-lg hover:shadow-blue-500/25 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-8 py-3 rounded-xl bg-gradient-to-r from-[#19a4b7] to-[#f36523] text-white font-bold hover:opacity-90 transition-all duration-200 ml-auto shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? (
