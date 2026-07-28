@@ -35,7 +35,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li>
                 <Link
-                  href="/invitaciones"
+                  href="https://dc-moments.vercel.app/"
                   className="text-gray-600 hover:text-[#f36523] transition flex items-center gap-2 group"
                 >
                   <span className="w-1.5 h-1.5 bg-[#f36523] rounded-full opacity-0 group-hover:opacity-100 transition" />
