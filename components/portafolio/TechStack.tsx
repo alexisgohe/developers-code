@@ -19,6 +19,7 @@ const tech = [
   "MySQL",
   "Express",
   "Flutter",
+  "Net",
 ];
 
 export default function TechStack() {
