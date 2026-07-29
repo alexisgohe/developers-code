@@ -6,6 +6,18 @@ import { PrequalificationForm } from '@/components/contacto/PrequalificationForm
 export const metadata: Metadata = {
   title: "Contacto | Developers Code",
   description: "Completa nuestro formulario de precalificación para conocer más sobre tu proyecto y cómo podemos ayudarte.",
+  alternates: {
+    canonical: "/contacto",
+  },
+  openGraph: {
+    title: "Contacto | Developers Code",
+    description: "Completa nuestro formulario de precalificación para conocer más sobre tu proyecto y cómo podemos ayudarte.",
+    url: "https://developers-code.vercel.app/contacto",
+  },
+  twitter: {
+    title: "Contacto | Developers Code",
+    description: "Completa nuestro formulario de precalificación para conocer más sobre tu proyecto y cómo podemos ayudarte.",
+  },
 };
 
 export default function ContactoPage() {

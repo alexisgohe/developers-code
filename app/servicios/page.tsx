@@ -8,8 +8,20 @@ import { Button } from "@/components/ui/button"
 import { SERVICIOS } from "./data"
 
 export const metadata: Metadata = {
-  title: "Cotizaciones | Developers Code",
+  title: "Planes y Cotizaciones | Developers Code",
   description: "Consulta nuestros planes y precios de desarrollo web, tiendas en línea y sistemas a la medida.",
+  alternates: {
+    canonical: "/servicios",
+  },
+  openGraph: {
+    title: "Planes y Cotizaciones | Developers Code",
+    description: "Consulta nuestros planes y precios de desarrollo web, tiendas en línea y sistemas a la medida.",
+    url: "https://developers-code.vercel.app/servicios",
+  },
+  twitter: {
+    title: "Planes y Cotizaciones | Developers Code",
+    description: "Consulta nuestros planes y precios de desarrollo web, tiendas en línea y sistemas a la medida.",
+  },
 }
 
 export default function ServiciosPage() {

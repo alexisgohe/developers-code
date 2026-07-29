@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://developers-code.vercel.app
-
-# Sitemaps
-Sitemap: https://developers-code.vercel.app/sitemap.xml
