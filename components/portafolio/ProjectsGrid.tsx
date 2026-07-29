@@ -18,7 +18,7 @@ const projects = [
     tag: "Web",
     tech: ["Nextjs", "Tailwind"],
     image: "/portafolio/developers-code-moments.jpg",
-    link: "https://developers-code.vercel.app/invitaciones",
+    link: "https://dc-moments.vercel.app/",
   },
   {
     title: "PDF Tools",
