@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 py-16">
         
         {/* 🧩 GRID */}
-        <div className="grid md:grid-cols-3 gap-12 mb-12">
+        <div className="grid md:grid-cols-4 gap-12 mb-12">
 
           {/* 🧠 Marca */}
           <div>
@@ -55,6 +55,39 @@ export default function Footer() {
               <li>
                 <Link href="/cookies" className="text-gray-600 hover:text-[#f36523] transition">
                   Política de Cookies
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* 🧭 Navegación */}
+          <div>
+            <h4 className="text-lg font-semibold mb-4">
+              Navegación
+            </h4>
+            <ul className="space-y-3 text-sm">
+              <li>
+                <Link href="/#servicios" className="text-gray-600 hover:text-[#f36523] transition flex items-center gap-2 group">
+                  <span className="w-1.5 h-1.5 bg-[#19a4b7] rounded-full opacity-0 group-hover:opacity-100 transition" />
+                  Servicios
+                </Link>
+              </li>
+              <li>
+                <Link href="/servicios" className="text-gray-600 hover:text-[#f36523] transition flex items-center gap-2 group">
+                  <span className="w-1.5 h-1.5 bg-[#19a4b7] rounded-full opacity-0 group-hover:opacity-100 transition" />
+                  Cotizaciones
+                </Link>
+              </li>
+              <li>
+                <Link href="/portafolio" className="text-gray-600 hover:text-[#f36523] transition flex items-center gap-2 group">
+                  <span className="w-1.5 h-1.5 bg-[#19a4b7] rounded-full opacity-0 group-hover:opacity-100 transition" />
+                  Portafolio
+                </Link>
+              </li>
+              <li>
+                <Link href="/#proceso" className="text-gray-600 hover:text-[#f36523] transition flex items-center gap-2 group">
+                  <span className="w-1.5 h-1.5 bg-[#19a4b7] rounded-full opacity-0 group-hover:opacity-100 transition" />
+                  Proceso
                 </Link>
               </li>
             </ul>
